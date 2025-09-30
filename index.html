@@ -1,93 +1,90 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Lab 3</title>
 
-    <head>
+    <style>
+        .image-preview img{
+            border-style: solid;
+            border-width: 30px;
+            border-top-color: skyblue;
+            border-right-color: lightpink;
+            border-bottom-color: lightgreen;
+            border-left-color: #ffefd5;
+        }
 
-        <title>CPIT-405 lab2</title>
+        img{
+            height: 250px;
+            width: 350px;
+        }
 
-    </head>
-
-    <body>
-
-        <h1>Lab 2:HTML</h1>
-
-        <a href = "https://cpit405.gitlab.io"> Click here for CPIT-405 Website</a>
-
-        <p>Hello this is Lab 2 Test. <hr> HTML is fun.</p>
-
-        <hr style="height:10px"/>
-
-        <p>Presented by Dr. Ahmad Al-Tayeb.</p>
-
-        <a href = "https://cpit405.gitlab.io" target="_blank">
-        <img style="width: 20%; height: 20%" src = https://img.freepik.com/free-vector/it-engineering-isometric-composition_1284-25086.jpg alt = IT Department />
-        </a>
-
-        <p><strong>Strong Test</strong></p>
-        <P><em>em Test</em></P>
-        <p>testing <sup>sup</sup></p>
-        <p>testing <sub>sub</sub></p>
-        <p>hello this is <span style = "color: red"> red using span</span> test</p>
-
-        <ol>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </ol>
-
-        <table>
-            <style>
-
-            th ,td {
-                padding: 12px 20px;
-                            border-bottom: 1px solid #ccc;
-
-            }
-
-             tr:first-child th {
-            border-bottom: 2px solid black;
-            }
-
-            tr:not(:last-child) td {
-            border-bottom: 1px solid #ccc;
-            }
-            </style>
-
-            <tr>
-                <th>Basics</th>
-                <th>Front-end Frameworks</th>
-                <th>Server-side frameworks</th>
-            </tr>
-
-            <tr>
-                <td>HTML</td>
-                <td>React</td>
-                <td>Spring</td>
-            </tr>
-
-            <tr>
-                <td>CSS</td>
-                <td>Angular</td>
-                <td>Django</td>
-            </tr>
-
-            <tr>
-                <td>JS</td>
-                <td>Vue</td>
-                <td>Laravel</td>
-            </tr>
-
-        </table>
-
-        <form>
-            <label for="Username">Username:</label><br>
-            <input type="text" id="Username" name="Username"><br>
-            <label for="Password">Password:</label><br>
-            <input type="password" id="Password" name="Password"><br><br>
-            <input type="submit" value="submit">
-        </form>
-
-    </body>
+        
+        p > span { color: red; }
+        #header span { color: pink; }
+        span { color: green; }
+        #header *:last-child { color: orange; }
+        #header span:first-child:hover { color: blue; }
 
 
+        th {
+            padding: 20px;
+        }
+
+        td {
+            padding: 20px;
+            border-top: solid;
+            border-right: none;
+            border-left: none;
+            border-bottom: none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="image-preview">
+  <img src='https://cpit405.gitlab.io/images/KAU_logo.png'>
+</div>
+
+<div id="header">
+    <span class="myclass1">Every</span>
+    <span class="myclass2">one can</span>
+    <span class="myclass3">success.</span>
+  </div>
+
+  <p> One machine can do the work of fifty ordinary men.
+    <span class="myclass4">No machine can do the work of one extraordinary man.</span>
+  </p>
+
+  <table>
+    <tr>
+        <th></th>
+        <th>color</th>
+        <th>color when mouse over</th>
+    </tr>
+
+    <tr>
+        <th>span.myclass1</th>
+        <td>pink</td>
+        <td>blue</td>
+    </tr>
+    <tr>
+        <th>span.myclass2</th>
+        <td>pink</td>
+        <td>pink</td>
+    </tr>
+    <tr>
+        <th>span.myclass3</th>
+        <td>orange</td>
+        <td>orange</td>
+    </tr>
+    <tr>
+        <th>span.myclass4</th>
+        <td>red</td>
+        <td>red</td>
+    </tr>
+  </table>
+</body>
 </html>
