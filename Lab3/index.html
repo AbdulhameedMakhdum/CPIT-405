@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 3</title>
+
+    <style>
+        .image-preview img{
+            border-style: solid;
+            border-width: 30px;
+            border-top-color: skyblue;
+            border-right-color: lightpink;
+            border-bottom-color: lightgreen;
+            border-left-color: #ffefd5;
+        }
+
+        img{
+            height: 250px;
+            width: 350px;
+        }
+
+        
+        p > span { color: red; }
+        #header span { color: pink; }
+        span { color: green; }
+        #header *:last-child { color: orange; }
+        #header span:first-child:hover { color: blue; }
+
+
+        th {
+            padding: 20px;
+        }
+
+        td {
+            padding: 20px;
+            border-top: solid;
+            border-right: none;
+            border-left: none;
+            border-bottom: none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="image-preview">
+  <img src='https://cpit405.gitlab.io/images/KAU_logo.png'>
+</div>
+
+<div id="header">
+    <span class="myclass1">Every</span>
+    <span class="myclass2">one can</span>
+    <span class="myclass3">success.</span>
+  </div>
+
+  <p> One machine can do the work of fifty ordinary men.
+    <span class="myclass4">No machine can do the work of one extraordinary man.</span>
+  </p>
+
+  <table>
+    <tr>
+        <th></th>
+        <th>color</th>
+        <th>color when mouse over</th>
+    </tr>
+
+    <tr>
+        <th>span.myclass1</th>
+        <td>pink</td>
+        <td>blue</td>
+    </tr>
+    <tr>
+        <th>span.myclass2</th>
+        <td>pink</td>
+        <td>pink</td>
+    </tr>
+    <tr>
+        <th>span.myclass3</th>
+        <td>orange</td>
+        <td>orange</td>
+    </tr>
+    <tr>
+        <th>span.myclass4</th>
+        <td>red</td>
+        <td>red</td>
+    </tr>
+  </table>
+</body>
+</html>
