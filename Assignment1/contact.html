@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="header-title">
+                <h1>Abdulhameed Makhdum</h1>
+                <p>IT Student</p>
+            </div>
+            <nav>
+                <a href="index.html">CV</a>
+                <a href="schedule.html">Class Schedule</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <aside class="sidebar">
+            <img src="Images/profile.png" alt="Abdulhameed Makhdum" class="profile-photo">
+
+            <div class="sidebar-contact">
+                <h3>Contact</h3>
+                <p><strong>Email:</strong> <a href="mailto:aali0366@stu.kau.edu.sa">aali0366@stu.kau.edu.sa</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+966541263534">+966541263534</a></p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/abdulhameed-makhdum" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <h2>Contact</h2>
+
+            <form action="https://webhook.site/eededfa5-ef0e-4751-ba7a-250244093353" method="POST">
+                <div class="form-group">
+                    <label for="name">Name: <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message: <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="10" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Message Type: <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="message_type" value="complaint" required>
+                            Complaint
+                        </label>
+                        <label>
+                            <input type="radio" name="message_type" value="inquiry" required>
+                            Inquiry
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Abdulhameed Makhdum. All rights reserved.</p>
+    </footer>
+</body>
+</html>
