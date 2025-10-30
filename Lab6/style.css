@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.buttons {
+  margin: 20px;
+}
+
+button {
+  background-color: #ddd;
+  border: none;
+  padding: 15px 25px;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+.comment-section {
+  margin: 20px;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+
+#commentList {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  width: 60%;
+}
+
+#commentList li {
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.comment-user {
+  font-weight: bold;
+  color: #333;
+}
+
+.comment-text {
+  margin-top: 5px;
+}
+
+.reset {
+  margin-top: 20px;
+  background-color: #444;
+  color: white;
+}
