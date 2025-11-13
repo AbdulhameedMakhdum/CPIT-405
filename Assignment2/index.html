@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Meal Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍽️ Random Meal Generator</h1>
+            <p>Discover delicious recipes from around the world!</p>
+        </header>
+
+        <div class="button-container">
+            <button id="generateBtn" class="generate-btn">Get Random Meal</button>
+        </div>
+
+        <div style="height: 30px;"></div>
+
+        <div id="loadingSpinner" style="display: none;">
+            <div class="spinner"></div>
+            <p>Cooking up something delicious...</p>
+        </div>
+
+        <div id="mealCard" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
