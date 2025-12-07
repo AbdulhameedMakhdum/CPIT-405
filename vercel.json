@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+        {
+            "source": "/api/twitch/token",
+            "destination": "/api/twitch/token"
+        },
+        {
+            "source": "/api/igdb/games",
+            "destination": "/api/igdb/games"
+        }
+    ]
+}
